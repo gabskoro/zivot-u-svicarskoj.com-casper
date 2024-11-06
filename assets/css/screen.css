@@ -35,13 +35,16 @@ production stylesheet in assets/built/screen.css
     --color-green: #a4d037;
     --color-yellow: #fecd35;
     --color-red: #f05230;
-    --color-darkgrey: #15171A;
+    /* --color-darkgrey: #15171A; */
     --color-midgrey: #738a94;
     --color-lightgrey: #f1f1f1;
     --color-secondary-text: #979797;
     --color-border: #e1e1e1;
     --color-wash: #e5eff5;
     --color-darkmode: #151719;
+
+    /* Custom */
+    --color-darkgrey: #35373a;
 
     /*
     An accent color is also set by Ghost itself in
@@ -113,10 +116,14 @@ production stylesheet in assets/built/screen.css
     z-index: 100;
     display: flex;
     align-items: center;
-    padding-top: calc(19vmin + 44px);
-    padding-bottom: 19vmin;
+    /* padding-top: calc(19vmin + 44px); */
+    /* padding-bottom: 19vmin; */
     text-align: center;
     color: var(--color-darkgrey);
+
+    /* Custom */
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .has-cover .site-header-content {
@@ -165,7 +172,10 @@ production stylesheet in assets/built/screen.css
     margin: 0;
     padding: 0;
     font-size: 5rem;
-    font-weight: 800;
+    /* font-weight: 800; */
+
+    /* Custom */
+    font-weight: 700;
 }
 
 .has-serif-title .site-title {
@@ -195,10 +205,13 @@ production stylesheet in assets/built/screen.css
 
 :is(.site-logo, .site-title) + .site-description {
     max-width: 640px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 1.4;
+
+    /* Custom */
+    margin-top: 0px;
 }
 
 .site-logo + .site-description {
@@ -230,7 +243,8 @@ production stylesheet in assets/built/screen.css
 
 @media (max-width: 991px) {
     .site-header-content {
-        padding-top: calc(19vmin + 32px);
+        /* Custom */
+        /* padding-top: calc(19vmin + 32px); */
     }
 }
 
@@ -263,11 +277,14 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 
 .gh-head {
-    height: 88px;
+    /* height: 88px; */
     font-size: 1.6rem;
     line-height: 1.3em;
     background-color: #fff;
     z-index: 150;
+
+    /* Custom */
+    height: 50px;
 }
 
 .has-cover:not(.home-template) .gh-head {
@@ -440,10 +457,13 @@ production stylesheet in assets/built/screen.css
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    /* gap: 32px; */
     list-style: none;
     margin: 0;
     padding: 0;
+
+    /* Custom */
+    gap: 20px;
 }
 
 .gh-head-menu .nav li {
@@ -583,14 +603,17 @@ production stylesheet in assets/built/screen.css
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
-    height: 44px;
+    /* padding: 8px 18px; */
+    /* height: 44px; */
     font-weight: 600;
     letter-spacing: -0.005em;
     font-size: 1.6rem;
     border-radius: 48px;
     color: #fff;
     background: var(--ghost-accent-color);
+
+    /* Custom */
+    padding: 5px 15px;
 }
 
 .has-cover .gh-head-button {
