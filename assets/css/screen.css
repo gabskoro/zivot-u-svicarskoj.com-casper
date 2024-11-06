@@ -1290,6 +1290,12 @@ html.no-infinite-scroll .pagination {
     grid-column: wide-start / wide-end;
     width: 100%;
     margin: max(6.4vmin, 40px) 0 0;
+
+    /* Custom */
+    @media (min-width: 992px) {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .image-full .article-image {
@@ -1697,7 +1703,8 @@ iframe.instagram-media + script + :not([id]) {
 
 /* Tables */
 .gh-content table:not(.gist table) {
-    display: inline-block;
+    /* Custom */
+    /* display: inline-block; */
     overflow-x: auto;
     max-width: 100%;
     width: auto;
@@ -1712,6 +1719,11 @@ iframe.instagram-media + script + :not([id]) {
     background-attachment: scroll, scroll;
     background-size: 10px 100%, 10px 100%;
     background-repeat: no-repeat;
+
+    /* Custom */
+    @media (max-width: 767px) {
+        display: inline-block;
+    }
 }
 
 .gh-content table:not(.gist table) td:first-child {
